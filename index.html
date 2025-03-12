@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="qr-header">
+            <h1>QR Code Generator</h1>
+            <p>Enter your text or URL below</p>
+        </div>
+        
+        <div class="qr-form">
+            <form id="qrForm">
+                <input type="text" id="qrInput" placeholder="Enter text or URL" autocomplete="off">
+                <button type="submit">Generate QR Code</button>
+            </form>
+        </div>
+
+        <div class="qr-code">
+            <img id="qrImage" src="" alt="QR Code" style="display: none;">
+        </div>
+
+        <div class="signature">
+            <span>🦖</span> code by <a href="https://github.com/twiez" id="twiez-link" class="twiez">twiez</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
